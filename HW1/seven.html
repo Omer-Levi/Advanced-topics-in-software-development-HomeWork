@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q7</title>
+  </head>
+  <body>
+    <label id="n2">input number: </label>
+    <input type="text" id="number1" placeholder="defult value = 5" />
+    <input id="number" type="submit" value="Submit" onclick="factorial()" />
+    <h1 id="h2new"></h1>
+  </body>
+
+  <script>
+    function factorial() {
+      let n =
+        document.getElementById("number1").value != ""
+          ? document.getElementById("number1").value
+          : 5;
+
+      let num2 = 1;
+      for (let index = 2; index <= n; index++) {
+        num2 *= index;
+      }
+      document.getElementById("h2new").innerHTML = "The result is: " + num2;
+    }
+  </script>
+</html>

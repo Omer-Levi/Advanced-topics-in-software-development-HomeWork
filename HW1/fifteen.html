@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Click to "Disply" button, to disply the "Click" button:</p>
+    <button id="but1" onclick="diplayFunction1()">Disply</button><br />
+    <button style="display: none" id="but2" onclick="diplayFunction2()">
+      Click
+    </button>
+  </body>
+  <script>
+    function diplayFunction1() {
+      document.getElementById("but2").style.display = "block";
+    }
+
+    function diplayFunction2() {
+      document.getElementById("but2").style.display = "none";
+    }
+  </script>
+</html>

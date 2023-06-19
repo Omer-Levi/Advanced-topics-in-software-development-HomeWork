@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q8</title>
+  </head>
+  <body>
+    <label>Car type: </label><br />
+    <input type="text" id="carType" placeholder="input Car type" />
+
+    <br />
+
+    <label>A year on the road: </label><br />
+    <input type="text" id="year" placeholder="input A year on the road" />
+
+    <br />
+
+    <label>The original price of the vehicle: </label><br />
+    <input type="text" id="price" placeholder="input price of the vehicle" />
+    <input
+      id="number"
+      type="submit"
+      value="Submit"
+      onclick="priceCalculation()"
+    />
+  </body>
+  <script>
+    function priceCalculation() {
+      let ct = document.getElementById("carType").value;
+      let yr = document.getElementById("year").value;
+      let op = document.getElementById("price").value;
+      let currentYear = 2023;
+      let numOfy = currentYear - yr;
+      let afterPrice = op;
+
+      while (numOfy != 0) {
+        afterPrice -= afterPrice * 0.1;
+        numOfy -= 1;
+      }
+
+      let arrCars = [ct, yr, afterPrice];
+      console.log(arrCars);
+    }
+  </script>
+</html>

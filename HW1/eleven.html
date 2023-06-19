@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>input number: </label>
+    <input type="text" id="number1" placeholder="defult value = 5" />
+    <input id="number" type="submit" value="Submit" onclick="numbers()" />
+    <p id="num"></p><br>
+  </body>
+
+  <script>
+    function numbers() {
+      let n =
+        document.getElementById("number1").value != ""
+          ? document.getElementById("number1").value
+          : 5;
+
+     document.write("the numbers in a console: " );
+      for (let index = 1; index <= n; index++) {
+        // document.getElementById("num").innerHTML = index;
+        document.write(index + " ");
+        console.log(index)
+      }
+    }
+  </script>
+</html>

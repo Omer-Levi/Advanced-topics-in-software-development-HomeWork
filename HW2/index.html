@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW2</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+  </head>
+  <body>
+    <div id="contactForm">
+      <h1 style="margin-bottom: 10px"><span>Ofek & Omer HW2</span></h1>
+      <form method="post" action="indexp.php">
+        <input
+          placeholder="First Name"
+          id="fsName"
+          name="fsName"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Last Name"
+          id="lsName"
+          name="lsName"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Date of birth"
+          id="dob"
+          name="dob"
+          type="date"
+          required
+        />
+        <input
+          placeholder="Number phone"
+          id="np"
+          name="np"
+          type="text"
+          pattern=".{8,}"
+          required
+        />
+        <input
+          placeholder="User name"
+          id="usn"
+          name="usn"
+          type="text"
+          required
+        />
+        <input
+          placeholder="Password"
+          id="psw"
+          name="psw"
+          type="password"
+          pattern="(?=.*\d)(?=.*[!,@,#,$,%,^,&,*,?,_,~,-,(,)])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          required
+        />
+
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">
+            A <b>capital (uppercase)</b> letter
+          </p>
+          <p id="scharter" class="invalid">A <b>special character</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+
+        <button class="formBtn" type="submit" name="submit" id="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

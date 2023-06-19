@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+  </head>
+  <body>
+    <div class="div1">
+      <form>
+        <ul>
+          <li>
+            <label for="name"
+              ><strong>Name: </strong>
+              <input
+                type="text"
+                name="name"
+                id="name1"
+                placeholder="input your name"
+            /></label>
+          </li>
+          <br />
+          <li>
+            <label for="laname"
+              ><strong>Last Name: </strong>
+              <input
+                type="text"
+                name="laname"
+                id="laname1"
+                placeholder="input your Last Name"
+                required
+            /></label>
+          </li>
+          <br />
+          <li>
+            <label for="myemail"
+              ><strong>E-mail: </strong>
+              <input
+                type="email"
+                name="myemail"
+                id="myemail1"
+                placeholder="input your E-mail"
+                required
+            /></label>
+          </li>
+          <br />
+          <li>
+            <label for="chose"><strong>Choose somethig: </strong></label>
+            <select name="chose" id="chose1">
+              <option value="name1">Name</option>
+              <option value="laname1">Last Name</option>
+              <option value="myemail1">E-mail</option>
+            </select>
+          </li>
+          <li>
+            <label for="text"><strong>Input text: </strong></label><br />
+            <textarea
+              name="text"
+              id="text1"
+              cols="30"
+              rows="10"
+              placeholder="input your Text here"
+              required
+            ></textarea>
+          </li>
+          <input type="submit" value="Submit" />
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
